@@ -1,0 +1,3 @@
+yang dipelajari:
+CSS
+Github
