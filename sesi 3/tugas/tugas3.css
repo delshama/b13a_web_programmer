@@ -1,0 +1,92 @@
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+nav ul li a:hover {
+  background-color: aliceblue;
+}
+
+section {
+  margin: 20px;
+}
+
+form {
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+form input[type="submit"] {
+  margin: 0;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#profile {
+  display: flex;
+  align-items: center; /* Align vertically in the center */
+  background-color: white;
+}
+
+.profile-text {
+  margin-left: 20px; /* Add margin to create space between profile-photo and profile-text */
+}
+
+.button1 {
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  padding: 7px;
+}
+
+.button2 {
+  border-radius: 5px;
+  background-color: white;
+  color: #50c878;
+  border-color: lightgreen;
+  padding: 7px;
+}
+
+#detail {
+  margin-left: 30px;
+
+}
+
+td {
+  padding: 15px;
+  
+}
+
+input {
+  border-radius: 5px;
+}
