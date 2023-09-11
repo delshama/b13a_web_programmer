@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung luas dan keliling lingkaran</title>
+</head>
+<body>
+    <h2>Mochamad Delly Maulana Agustian</h2>
+    <h3>algoritma</h3>
+    <p>luas <br>langkah 1 : masukan nilai ke variabel jari-jari <br>langkah 2 : menghitung perkalian 3.14 * jari-jari * jari-jari
+    <br>langkah 3 : masukan hasil perkalian 3.14 * jari-jari * jari-jari ke variabel hasil <br>langkah 4 : tampilkan hasil
+    </p>
+    <p>
+        keliling <br>langkah 1 : masukan nilai ke variabel jari-jari <br>langkah 2 : menghitung perkalian 2 * 3.14 * jari-jari <br>
+        langkah 3 : masukan hasil perkalian 2 * 3.14 * jari-jari ke variabel hasil <br>langkah 4 : tampilkan hasil
+    </p>
+    <h3>pseudocode</h3>
+    <p>luas</p>
+    <ul>
+        <li>baca dan simpan "r" dengan nilai berapapun</li>
+        <li>baca simpan "hasil" tanpa diisi dengan nilai</li>
+        <li>hitung hasil perkalian 3.14 * r * r</li>
+        <li>masukan hasil perkalian ke "hasil"</li>
+        <li>tampilkan hasil</li>
+    </ul>
+    <p>keliling</p>
+    <ul>
+        <li>baca dan simpan "r" dengan nilai berapapun</li>
+        <li>baca dan simpan "hasil" tanpa diisi dengan nilai</li>
+        <li>hitung hasil perkalian 2 * 3.14 * r</li>
+        <li>masukan hasil perkalian ke "hasil"</li>
+        <li>tampilkan hasil</li>
+    </ul>
+
+    <label for="">Jari-jari</label>
+    <input type="number" id="jari2">
+    <p id="hasil"></p>
+
+    <button onclick="luas()">Hitung luas</button>
+    <button onclick="keliling()">Hitung keliling</button>
+
+    <script>
+        function luas(){
+            var jari2 = document.getElementById("jari2").value
+            
+
+            var hasil = 3.14 * parseInt(jari2) * parseInt(jari2);
+            document.getElementById("hasil").innerHTML = hasil
+        }
+        
+        function keliling(){
+            var jari2 = document.getElementById("jari2").value
+            
+
+            var hasil = 2 * 3.14 * parseInt(jari2);
+            document.getElementById("hasil").innerHTML = hasil
+        }
+    </script>
+
+
+</body>
+</html>
