@@ -1,0 +1,5 @@
+yang dipelajari:
+javascript
+perulangan javascript
+pengkondisian javascript
+function javascript
