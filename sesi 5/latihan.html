@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan</title>
+</head>
+<body>
+    <p id="hasil"></p>
+    <button id="maju" onclick="maju()">maju</button>
+    <button id="mundur" onclick="mundur()">mundur</button>
+
+    <script>
+        var hitung=0;
+        var hasil=document.getElementById("hasil");
+        hasil.innerHTML = `Hasil: ${hitung}`
+
+        function maju(){
+            hitung++
+            hasil.innerHTML = `Hasil: ${hitung}`
+
+        }
+        function mundur(){
+            hitung--
+            hasil.innerHTML = `Hasil: ${hitung}`
+        }
+    </script>
+</body>
+</html>
