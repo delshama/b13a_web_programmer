@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nomor telepon</title>
+  </head>
+  <body>
+    <input type="number" id="numeric-input" onkeyup="filterInput(event)" />
+    <p id="error-message" style="color: red"></p>
+
+    <script>
+      function filterInput(event) {
+        const inputElement = event.target;
+        const inputValue = inputElement.value;
+
+        if (/^\d+$/.test(inputValue)) {
+          document.getElementById("error-message").textContent = "";
+        } else {
+          document.getElementById("error-message").textContent =
+            "Input harus berupa angka.";
+          inputElement.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>

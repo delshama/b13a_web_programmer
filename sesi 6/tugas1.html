@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buat Animation</h1>
+    <h3>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla obcaecati
+      dolor qui aut! Tempore beatae nam quaerat obcaecati veritatis! Accusamus
+      ut cupiditate quisquam debitis? Libero aliquam ex ut aspernatur rem!
+      
+    <br>
+    <button onclick="clearInterval(waktu)">stop kedap kedip</button>
+        
+    </h3>
+    <button onclick="setTimeout(bg,3000)">klik untuk 3 detik berubah</button>
+    <script>
+        
+        document.body.style.backgroundColor = "lime";
+
+        function bg(){
+            document.body.style.backgroundColor = "gray";
+        }
+
+        var waktu = setInterval(start,400);
+        function start(){
+            var h3 = document.getElementsByTagName("h3")[0];
+            var warna = h3.style.color;
+            h3.style.color = (warna == "red") ? "blue" : "red";
+        }
+        
+    </script>
+  </body>
+</html>
