@@ -1,0 +1,2 @@
+yang dipelajari:
+deploy
